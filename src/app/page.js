@@ -16,7 +16,7 @@ export default function Home() {
         <HeroSection />
         <ServicesSection />
         <Start />
-        <div className="bg-[url('/Background/back11.jpg')] bg-fixed object bg-center bg-cover ">
+        <div className=" bg-fixed object bg-center bg-cover ">
           <DiscountSection />
           <SecondSection />
           <DownloadSection />

@@ -117,7 +117,7 @@ const ServicesSection = () => {
   const activeContent = servicesData[activeTab];
 
   return (
-    <section className="text-white py-20 px-4 sm:px-6 lg:px-8 bg-[#0b1120] bg-[url('/Background/back11.jpg')] bg-cover bg-center bg-no-repeat shadow-[0_-48px_20px_0px_rgba(4,10,22,0.6)] bg-fixed ">
+    <section className="text-white py-20 px-4 sm:px-6 lg:px-8 bg-[#0b1120] bg-cover bg-center bg-no-repeat ">
       <div className="max-w-[1110px] mx-auto">
         {/* عنوان */}
         <div className="text-center">
@@ -210,7 +210,7 @@ const ServicesSection = () => {
                   {activeContent.details.features.map((feature) => (
                     <div
                       key={feature.title}
-                      className=" border-2 border-gray-800  p-4 rounded-lg bg-gradient-to-r from-[#111b36] from-[14%] to-[#060a12] drop-shadow-blue-500 drop-shadow-xl/50 shadow-[0px_-20px_30px_20px_rgba(0,0,1,0.5)]"
+                      className=" border-2 border-gray-800  p-4 rounded-lg bg-gradient-to-r from-[#111b36] from-[14%] to-[#060a12]"
                     >
                       <h4 className="font-bold bg-gradient-to-r from-[#75d9d9] from-[30%] to-[#477cff] bg-clip-text text-transparent">
                         {feature.title}

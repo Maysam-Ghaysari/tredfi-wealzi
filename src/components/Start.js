@@ -29,7 +29,7 @@ const stepsData = [
 
 const Start = () => {
   return (
-    <section className=" text-white py-20 px-4 sm:px-6 lg:px-8 bg-[url('/Background/back11.jpg')] bg-fixed object bg-cover bg-center bg-no-repeat m-auto">
+    <section className=" text-white py-20 px-4 sm:px-6 lg:px-8 bg-fixed object bg-cover bg-center bg-no-repeat m-auto">
       <div className="max-w-[1100px] m-auto ">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
           <h3 className="text-xl font-bold uppercase tracking-wider mb-2 bg-gradient-to-r from-[#75d9d9] from-[30%] to-[#477cff] bg-clip-text text-transparent">
@@ -64,7 +64,7 @@ const Start = () => {
             return (
               <div
                 key={step.stepNumber}
-                className={`relative rounded-2xl p-4 sm:p-6 drop-shadow-blue-500 drop-shadow-xl/50 flex flex-col shadow-[0px_-20px_30px_20px_rgba(0,0,1,0.5)]`}
+                className={` bg-[#101730] relative rounded-2xl p-4 sm:p-6 flex flex-col shadow-[0px_0px_10px_10px_rgba(0,0,26,0.9)]`}
               >
                 {/* نوار رنگی پایین کارت */}
                 <div
