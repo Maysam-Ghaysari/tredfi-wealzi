@@ -76,7 +76,7 @@ const Start = () => {
                   <h4 className="text-lg sm:text-xl font-bold">
                     {step.stepNumber}- {step.title}
                   </h4>
-                  <div className="bg-[#0f172f] p-1 sm:p-2 rounded-lg">
+                  <div className="sm:p-2 rounded-lg">
                     <Image
                       src={step.icon}
                       alt={`آیکون برای ${step.title}`}
