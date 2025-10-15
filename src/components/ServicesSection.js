@@ -210,7 +210,7 @@ const ServicesSection = () => {
                   {activeContent.details.features.map((feature) => (
                     <div
                       key={feature.title}
-                      className=" border-2 border-gray-800  p-4 rounded-lg bg-gradient-to-r from-[#111b36] to-[#060a12]"
+                      className=" border-2 border-gray-800  p-4 rounded-lg bg-gradient-to-r from-[#111b36] from-[14%] to-[#060a12] drop-shadow-blue-500 drop-shadow-xl/50 shadow-[0px_-20px_30px_20px_rgba(0,0,1,0.5)]"
                     >
                       <h4 className="font-bold bg-gradient-to-r from-[#75d9d9] from-[30%] to-[#477cff] bg-clip-text text-transparent">
                         {feature.title}
