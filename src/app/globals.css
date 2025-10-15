@@ -1,0 +1,41 @@
+@import "tailwindcss";
+:root {
+  background-color: #00080c;
+  margin: 0 auto;
+}
+
+@layer utilities {
+  /* انیمیشن برای ورود نرم تصویر */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* انیمیشن برای ورود نرم متن با کمی حرکت به بالا */
+  @keyframes slideUpFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px); /* از 10 پیکسل پایین‌تر شروع می‌شود */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* به جای اصلی خود برمی‌گردد */
+    }
+  }
+
+  /* کلاس کمکی برای اعمال انیمیشن تصویر */
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  /* کلاس کمکی برای اعمال انیمیشن متن */
+  .animate-slide-up {
+    animation: slideUpFadeIn 0.5s ease-in-out;
+  }
+}
