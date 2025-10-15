@@ -28,7 +28,7 @@ const DiscountSection = () => {
           </p>
           <button
             type="button"
-            className="hover:g-gradient-to-r hover:from-[#fff] hover:to-[#fff] hover:text-blue-600 mt-6 sm:mt-8 px-8 sm:px-10 py-3 font-semibold text-white  bg-gradient-to-r from-[#75d9d9] from-[5%] to-[#477cff] rounded-lg shadow-md transition-all duration-500 transform"
+            className=" hover:g-gradient-to-r hover:from-[#fff] hover:to-[#fff] hover:text-blue-600 mt-6 sm:mt-8 px-8 sm:px-10 py-3 font-semibold text-[#10141f]  bg-gradient-to-r from-[#75d9d9] from-[5%] to-[#477cff] rounded-lg shadow-md transition-all duration-500 transform"
           >
             دریافت هدیه
           </button>

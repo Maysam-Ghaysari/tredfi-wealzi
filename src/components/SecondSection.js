@@ -25,7 +25,7 @@ export default function SecondSection() {
           <div className="px-10">
             <button
               type="button"
-              className="  bg-gradient-to-r from-[#75d9d9] from-[5%] to-[#477cff] px-10 py-2 max-sm:mt-3 rounded-md font-semibold text-sm sm:text-base hover:g-gradient-to-r hover:from-[#fff] hover:to-[#fff] hover:text-blue-600 transition-all  duration-500"
+              className=" bg-gradient-to-r from-[#75d9d9] from-[5%] to-[#477cff] px-10 py-2 max-sm:mt-3 rounded-md font-semibold text-sm sm:text-base hover:g-gradient-to-r hover:from-[#fff] hover:to-[#fff] hover:text-blue-600 transition-all  duration-500"
             >
               !همراه شو
             </button>

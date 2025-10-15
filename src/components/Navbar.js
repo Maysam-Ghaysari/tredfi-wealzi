@@ -51,7 +51,7 @@ const Navbar = () => {
             </button>
             <button
               type="button"
-              className="px-6 py-1 rounded-lg bg-gradient-to-r from-[#75d9d9] from-[-20%] to-[#477cff] hover:opacity-90 hover:g-gradient-to-r hover:from-[#fff] hover:to-[#fff] hover:text-blue-600 duration-500 transition-all "
+              className="px-6 py-1 rounded-lg bg-gradient-to-r from-[#75d9d9] from-[-20%] to-[#477cff] hover:opacity-90 hover:g-gradient-to-r hover:from-[#fff] hover:to-[#fff] hover:text-blue-600 duration-500 transition-all text-[#10141f] "
             >
               ثبت نام
             </button>
