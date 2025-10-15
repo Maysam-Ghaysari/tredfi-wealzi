@@ -11,7 +11,7 @@ const HeroSection = () => {
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-[-1]"
       >
-        <source src="/Background/video-1.m4v" type="video/mp4" />
+        <source src="/Background/video-1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -45,10 +45,10 @@ const HeroSection = () => {
           >
             شروع به کار
           </button>
-          <div className="rounded-md bg-gradient-to-r from-[#75d9d9] to-[#477cff] p-0.5 w-full sm:w-auto">
-            <button
+          <div className="roundp-0.5 w-full sm:w-auto">
+            <button 
               type="button"
-              className=" transform rounded-md bg-[#141b34] px-14 py-2 text-lg font-semibold text-blue-300 transition-all duration-300 sm:w-auto hover:bg-white hover:text-blue-600"
+              className=" transform rounded-md bg-[#141b34] px-14 py-2 text-lg font-semibold text-blue-300 transition-all duration-300 sm:w-auto hover:bg-white hover:text-blue-600 max-sm:w-full "
             >
               ورود
             </button>

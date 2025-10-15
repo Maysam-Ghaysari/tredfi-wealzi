@@ -117,7 +117,7 @@ const ServicesSection = () => {
   const activeContent = servicesData[activeTab];
 
   return (
-    <section className="text-white py-20 px-4 sm:px-6 lg:px-8 bg-[#0b1120] bg-[url('/Background/back11.jpg')] bg-cover bg-center bg-no-repeat shadow-[0_-8px_20px_0px_rgba(0,0,0,0.6)]">
+    <section className="text-white py-20 px-4 sm:px-6 lg:px-8 bg-[#0b1120] bg-[url('/Background/back11.jpg')] bg-cover bg-center bg-no-repeat shadow-[0_-48px_20px_0px_rgba(4,10,22,0.6)] bg-fixed ">
       <div className="max-w-[1110px] mx-auto">
         {/* عنوان */}
         <div className="text-center">
@@ -138,7 +138,7 @@ const ServicesSection = () => {
         {/* تب‌ها */}
         <div
           dir="rtl"
-          className="mt-10 flex flex-wrap justify-center gap-2 md:gap-4 "
+          className="mt-10 flex flex-wrap justify-center gap-2 md:gap-4   "
         >
           {tabs.map((tab) => (
             <button

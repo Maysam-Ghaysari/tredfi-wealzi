@@ -8,6 +8,7 @@ import {
   FaGlobe,
 } from "react-icons/fa";
 
+// Social media icons configuration
 const socialIcons = [
   { icon: FaFacebookF, url: "#" },
   { icon: FaLinkedinIn, url: "#" },
@@ -19,16 +20,16 @@ const socialIcons = [
 
 const Footer = () => {
   return (
-    <footer className=" text-white md:p-12" dir="rtl">
-      <div className="mt-12 pt-8 border-t border-gray-700 text-center text-sm text-gray-500 max-w-[1100px] m-auto"></div>
-      <div className="max-w-[1100px] mx-auto  ">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 lg:grid-cols-6">
-          <div className="sm:col-span-2 lg:col-span-2 text-center sm:text-right order-last lg:order-1">
-            <div className="flex items-center justify-center sm:justify-start mb-4">
-              <img src="/Logo/logo.png" alt="ولزی" className="w-8 h-8 ml-2" />
+    <footer className="text-white md:p-12" dir="rtl">
+      <div dir="ltr" className="max-w-[1100px] mx-auto p-6 md:p-0">
+        <div  className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 lg:grid-cols-6">
+          {/* Section 1: Logo and Description (Now appears first on all screen sizes) */}
+          <div className="sm:col-span-2 lg:col-span-2 text-right order-1">
+            <div  className="flex items-center justify-end sm:justify-start mb-4">
               <h3 className="text-2xl font-bold">ولزی</h3>
+              <img  src="/Logo/logo.png" alt="ولزی" className="w-8 h-8 mr-2" />
             </div>
-            <p className="text-sm text-gray-300 leading-relaxed font-light max-w-[360px] mx-auto sm:mx-0">
+            <p dir="rtl" className="text-sm text-gray-300 leading-relaxed font-light max-w-[360px] mx-auto sm:mx-0 text-justify ">
               ما در ولزی با هدف ایجاد بستری امن به منظور سرمایه‌گذاری در
               دارایی‌های دیجیتال گامی نو در ارایه سرویس های سرمایه‌گذاری و مدیریت
               پورتفولیو برداشتیم و پیش بردن تمامی مراحل سرمایه‌گذاری را در کمال
@@ -37,15 +38,12 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* ستون ۲: لینک‌های ولزی */}
-          <div className="text-center sm:text-right order-4 lg:order-2">
+          {/* Section 2: Wealzi Links */}
+          <div className="text-right order-2">
             <h5 className="text-lg font-semibold mb-4 text-white">ولزی</h5>
             <ul className="space-y-3 text-sm text-gray-400">
               <li>
-                <a
-                  href="#"
-                  className=" hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#477cff] hover:to-[#75d9d9]  transition-all"
-                >
+                <a href="#" className="hover:text-cyan-400 transition-colors">
                   شرایط و قوانین
                 </a>
               </li>
@@ -67,7 +65,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="text-center sm:text-right order-3 lg:order-3">
+          {/* Section 3: User Guide */}
+          <div className="text-right order-3">
             <h5 className="text-lg font-semibold mb-4 text-white">
               راهنمای استفاده
             </h5>
@@ -95,7 +94,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="text-center sm:text-right order-2 lg:order-4">
+          {/* Section 4: User Services */}
+          <div className="text-right order-4">
             <h5 className="text-lg font-semibold mb-4 text-white">
               خدمات کاربران
             </h5>
@@ -123,7 +123,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="text-center sm:text-right order-1 lg:order-5">
+          {/* Section 5: Contact Us */}
+          <div className="text-right order-5">
             <h5 className="text-lg font-semibold mb-4 text-white">
               تماس با ما
             </h5>
@@ -138,13 +139,13 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-            <div className="flex justify-center sm:justify-start mt-6 space-x-2">
+            <div className="flex justify-end sm:justify-start mt-6 space-x-reverse space-x-4">
               {socialIcons.map((item, index) => (
                 <a
                   key={index}
                   href={item.url}
                   className="text-gray-400 hover:text-white transition-transform hover:scale-110"
-                  aria-label={`Link to ${item.url}`}
+                  aria-label={`Link to ${item.icon}`}
                 >
                   <item.icon className="w-5 h-5" />
                 </a>
@@ -153,7 +154,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-500"></div>
+        {/* Bottom Border */}
+        <div className="mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+          <p> © {new Date().getFullYear()} ولزی. تمام حقوق محفوظ است.</p>
+        </div>
       </div>
     </footer>
   );

@@ -16,12 +16,12 @@ export default function Home() {
         <HeroSection />
         <ServicesSection />
         <Start />
-        <div className="bg-[url('/Background/back25.jpg')] object bg-center bg-cover shadow-[00px_-48px_180px_0px_rgba(0,0,90,0.3)]">
+        <div className="bg-[url('/Background/back11.jpg')] bg-fixed object bg-center bg-cover ">
           <DiscountSection />
           <SecondSection />
+          <DownloadSection />
+          <Footer />
         </div>
-        <DownloadSection />
-        <Footer />
       </div>
     </ClientWrapper>
   );
