@@ -21,15 +21,22 @@ const socialIcons = [
 const Footer = () => {
   return (
     <footer className="text-white md:p-12" dir="rtl">
-      <div dir="ltr" className="max-w-[1100px] mx-auto p-6 md:p-0">
-        <div  className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 lg:grid-cols-6">
-          {/* Section 1: Logo and Description (Now appears first on all screen sizes) */}
-          <div className="sm:col-span-2 lg:col-span-2 text-right order-1">
-            <div  className="flex items-center justify-end sm:justify-start mb-4">
+      <div className="max-w-[1100px] mx-auto p-6 md:p-0">
+        <div className="mt-12 pt-8 border-t border-gray-700 text-center text-sm text-gray-400"></div>
+
+        <div
+          dir="rtl"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 lg:grid-cols-6 gap-10"
+        >
+          <div className="sm:col-span-2 lg:col-span-2 order-1 ">
+            <div className="flex items-center justify-end sm:justify-start mb-4 max-sm:flex-row-reverse">
               <h3 className="text-2xl font-bold">ولزی</h3>
-              <img  src="/Logo/logo.png" alt="ولزی" className="w-8 h-8 mr-2" />
+              <img src="/Logo/logo.png" alt="ولزی" className="w-8 h-8 mr-2" />
             </div>
-            <p dir="rtl" className="text-sm text-gray-300 leading-relaxed font-light max-w-[360px] mx-auto sm:mx-0 text-justify ">
+            <p
+              dir="rtl"
+              className="text-sm text-gray-300 leading-relaxed font-light max-w-[360px] mx-auto sm:mx-0 text-justify "
+            >
               ما در ولزی با هدف ایجاد بستری امن به منظور سرمایه‌گذاری در
               دارایی‌های دیجیتال گامی نو در ارایه سرویس های سرمایه‌گذاری و مدیریت
               پورتفولیو برداشتیم و پیش بردن تمامی مراحل سرمایه‌گذاری را در کمال
@@ -38,7 +45,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Section 2: Wealzi Links */}
           <div className="text-right order-2">
             <h5 className="text-lg font-semibold mb-4 text-white">ولزی</h5>
             <ul className="space-y-3 text-sm text-gray-400">
@@ -65,7 +71,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Section 3: User Guide */}
           <div className="text-right order-3">
             <h5 className="text-lg font-semibold mb-4 text-white">
               راهنمای استفاده
@@ -94,7 +99,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Section 4: User Services */}
           <div className="text-right order-4">
             <h5 className="text-lg font-semibold mb-4 text-white">
               خدمات کاربران
@@ -123,7 +127,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Section 5: Contact Us */}
           <div className="text-right order-5">
             <h5 className="text-lg font-semibold mb-4 text-white">
               تماس با ما
@@ -139,7 +142,7 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-            <div className="flex justify-end sm:justify-start mt-6 space-x-reverse space-x-4">
+            <div className="flex justify-end sm:justify-start mt-6 space-x-4 max-sm:flex-row-reverse">
               {socialIcons.map((item, index) => (
                 <a
                   key={index}
@@ -154,8 +157,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Border */}
-        <div className="mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+        <div className="mt-12 pt-8 border-t border-gray-700 text-center text-sm text-gray-500">
           <p> © {new Date().getFullYear()} ولزی. تمام حقوق محفوظ است.</p>
         </div>
       </div>
