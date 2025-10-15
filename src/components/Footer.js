@@ -49,7 +49,7 @@ const Footer = () => {
             <h5 className="text-lg font-semibold mb-4 text-white">ولزی</h5>
             <ul className="space-y-3 text-sm text-gray-400">
               <li>
-                <a href="#" className="hover:text-cyan-400 transition-colors">
+                <a href="#" className="hover:text-cyan-400 transition-colors ">
                   شرایط و قوانین
                 </a>
               </li>

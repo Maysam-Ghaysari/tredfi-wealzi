@@ -34,7 +34,7 @@ const Navbar = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-white transition-all duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#477cff] hover:to-[#75d9d9]"
+                className="text-white transition-all duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#75d9d9] hover:to-[#477cff]"
               >
                 {link.title}
               </Link>
@@ -76,7 +76,7 @@ const Navbar = () => {
 
       {/* منوی سایدبار موبایل ) */}
       <div
-        className={`md:hidden fixed top-0 left-0 h-full w-2/3 max-w-sm bg-[#12151D] shadow-xl transform transition-transform duration-300 ease-in-out z-50
+        className={`md:hidden fixed top-0 left-0 h-full w-2/3 max-w-sm bg-[#0b1120] shadow-xl transform transition-transform duration-300 ease-in-out z-50
           ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
         <div className="p-6" dir="rtl">
