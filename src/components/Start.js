@@ -38,7 +38,10 @@ const Start = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
             در ۳ قدم سرمایه‌گذاری را شروع کنید
           </h2>
-          <p dir="rtl" className="text-gray-400 text-sm sm:text-base leading-relaxed max-sm:text-justify">
+          <p
+            dir="rtl"
+            className="text-gray-400 text-sm sm:text-base leading-relaxed max-sm:text-justify"
+          >
             ما سال‌ها تجربه در ارائه سبدهای سرمایه‌گذاری دیجیتال روبه‌رشد و سودآور
             داریم
             <br /> با پشتیبانی و مشاوره لحظه‌ای، اجرای فوری، پلتفرم‌های پیشرفته و
@@ -61,7 +64,7 @@ const Start = () => {
             return (
               <div
                 key={step.stepNumber}
-                className={`relative rounded-2xl p-4 sm:p-6 drop-shadow-blue-500 drop-shadow-xl/50 flex flex-col shadow-[0px_-20px_30px_20px_rgba(0,0,1,0.5)]` }
+                className={`relative rounded-2xl p-4 sm:p-6 drop-shadow-blue-500 drop-shadow-xl/50 flex flex-col shadow-[0px_-20px_30px_20px_rgba(0,0,1,0.5)]`}
               >
                 {/* نوار رنگی پایین کارت */}
                 <div
