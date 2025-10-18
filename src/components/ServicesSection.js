@@ -25,7 +25,7 @@ const servicesData = {
     },
   },
   "ارزهای دیجیتال": {
-    image: "/svg/svg2.webp",
+    image: "/Services/digital.webp",
     details: {
       title: "سرمایه گذاری در  ",
       p: " ارزهای دیجیتال",
@@ -170,16 +170,22 @@ const ServicesSection = () => {
 
         {/* محتوای تصویر و توضیحات */}
         <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-          <div className="flex items-center justify-center order-last lg:order-first">
+          <div className="flex items-center justify-center order-last lg:order-first relative">
             {activeContent && activeContent.image && (
-              <Image
-                key={activeTab}
-                src={activeContent.image}
-                alt={activeContent.details.title}
-                width={500}
-                height={500}
-                className=" overflow-hidden object-cover max-w-md lg:max-w-full animate-fade-in"
-              />
+              <>
+                {/* هاله نوری زیر عکس */}
+                <div className="absolute bottom-0 h-[350px] w-[350px] rounded-full bg-[#465a8e] blur-[100px] opacity-120 animate-fade-in "></div>
+
+                {/* خود تصویر بدون افکت تار */}
+                <Image
+                  key={activeTab}
+                  src={activeContent.image}
+                  alt={activeContent.details.title}
+                  width={500}
+                  height={500}
+                  className="relative  z-10 overflow-hidden object-cover max-w-md lg:max-w-full animate-fade-in"
+                />
+              </>
             )}
           </div>
 
