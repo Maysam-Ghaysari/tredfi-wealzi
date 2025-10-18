@@ -30,7 +30,7 @@ const Footer = () => {
         >
           <div className="sm:col-span-2 lg:col-span-2 order-1 ">
             <div className="flex items-center  max-sm:justify-start mb-4  ">
-              <img src="/Logo/logo.png" alt="ولزی" className="w-8 h-8 ml-3" />
+              <img src="/Logo/logo.png" alt="ولزی" className="w-8 h-8 ml-2" />
               <h3 className="text-2xl font-bold">ولزی</h3>
             </div>
             <p
