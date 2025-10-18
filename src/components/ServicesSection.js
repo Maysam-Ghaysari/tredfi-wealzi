@@ -112,7 +112,7 @@ const servicesData = {
     image: "/Services/art.png",
     details: {
       title: " سرمایه‌گذاری حتی با پول کم در ",
-      p: "ملک و آثار هنر",
+      p: "ملک و آثار هنری",
 
       description: "این قابلیت جدید در حال تکمیل و پیاده سازی است",
       listItems: [],
@@ -192,10 +192,10 @@ const ServicesSection = () => {
               <>
                 <div className=" rounded-lg p-4">
                   <div className="flex flex-row-reverse">
-                    <h3 className="text-xl sm:text-3xl font-bold">
+                    <h3 className="text-3xl max-sm:text-[17px] font-bold">
                       {activeContent.details.title}
                     </h3>
-                    <h1 className=" text-xl sm:text-3xl font-bold  bg-gradient-to-r from-[#75d9d9] from-[10%] to-[#477cff] bg-clip-text text-transparent">
+                    <h1 className=" text-3xl max-sm:text-[17px] mr-2 font-bold  bg-gradient-to-r from-[#75d9d9] from-[10%] to-[#477cff] bg-clip-text text-transparent">
                       {activeContent.details.p}
                     </h1>
                   </div>

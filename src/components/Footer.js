@@ -29,8 +29,8 @@ const Footer = () => {
           className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 lg:grid-cols-6 gap-10"
         >
           <div className="sm:col-span-2 lg:col-span-2 order-1 ">
-            <div className="flex items-center justify-end sm:justify-start mb-4 max-sm:flex-row-reverse">
-              <img src="/Logo/logo.png" alt="ولزی" className="w-8 h-8 mr-2" />
+            <div className="flex items-center  max-sm:justify-start mb-4  ">
+              <img src="/Logo/logo.png" alt="ولزی" className="w-8 h-8 ml-3" />
               <h3 className="text-2xl font-bold">ولزی</h3>
             </div>
             <p
