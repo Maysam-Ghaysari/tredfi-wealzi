@@ -174,7 +174,7 @@ const ServicesSection = () => {
             {activeContent && activeContent.image && (
               <>
                 {/* هاله نوری زیر عکس */}
-                <div className="absolute bottom-0 h-[350px] w-[350px] rounded-full bg-[#465a8e] blur-[100px] opacity-120 animate-fade-in "></div>
+                <div className="absolute bottom-0 h-[350px] w-[350px] rounded-full bg-[#465a8e] blur-[100px] opacity-75 max-sm:-bottom-20 animate-fade-in "></div>
 
                 {/* خود تصویر بدون افکت تار */}
                 <Image
@@ -196,7 +196,7 @@ const ServicesSection = () => {
           >
             {activeContent && activeContent.details && (
               <>
-                <div className=" rounded-lg p-4">
+                <div className=" rounded-lg ">
                   <div className="flex flex-row-reverse">
                     <h3 className="text-3xl max-sm:text-[17px] font-bold">
                       {activeContent.details.title}
@@ -228,7 +228,7 @@ const ServicesSection = () => {
                   {activeContent.details.features.map((feature) => (
                     <div
                       key={feature.title}
-                      className=" mt-6 border-2 border-gray-800  p-4 rounded-2xl bg-gradient-to-r from-[#111b36] from-[14%] to-[#060a12]"
+                      className="mt-6 border-2 border-gray-800  p-2   rounded-2xl bg-gradient-to-r from-[#111b36] from-[14%] to-[#060a12]"
                     >
                       <h4 className="max-sm:text-[13px] text-xl font-bold bg-gradient-to-r from-[#75d9d9] from-[30%] to-[#477cff] bg-clip-text text-transparent">
                         {feature.title}
