@@ -224,16 +224,16 @@ const ServicesSection = () => {
                     {activeContent.details.summary}
                   </p>
                 </div>
-                <div className="mt-6 flex flex-row-reverse gap-4 max-sm:grid ">
+                <div className="mt-6 flex flex-row-reverse gap-4   ">
                   {activeContent.details.features.map((feature) => (
                     <div
                       key={feature.title}
                       className=" mt-6 border-2 border-gray-800  p-4 rounded-2xl bg-gradient-to-r from-[#111b36] from-[14%] to-[#060a12]"
                     >
-                      <h4 className=" text-xl font-bold bg-gradient-to-r from-[#75d9d9] from-[30%] to-[#477cff] bg-clip-text text-transparent">
+                      <h4 className="max-sm:text-[13px] text-xl font-bold bg-gradient-to-r from-[#75d9d9] from-[30%] to-[#477cff] bg-clip-text text-transparent">
                         {feature.title}
                       </h4>
-                      <p className="mt-1  text-gray-200">{feature.text}</p>
+                      <p className="max-sm:text-[10px] mt-1  text-gray-200">{feature.text}</p>
                     </div>
                   ))}
                 </div>
