@@ -7,7 +7,7 @@ const stepsData = [
     description:
       "در ۳ دقیقه حساب خود را بسازید. هویتتان را با امنیت کامل تأیید کنید. از هر نقطه دنیا به ما بپیوندید.",
     icon: "/Start/why-multibank.webp",
-    mainImage: "/Start/Screenshot1.png",
+    mainImage: "/Start/Start1.png",
   },
   {
     stepNumber: "۲",
@@ -15,7 +15,7 @@ const stepsData = [
     description:
       "از میان پورتفولیوهایی که متناسب با ریسک و شخصیت مالی شما پیشنهاد داده شده، پورتفولیو مورد نظر خود را انتخاب کنید.",
     icon: "/Start/account-funding.webp",
-    mainImage: "/Start/sabad.png",
+    mainImage: "/Start/Start2.png",
   },
   {
     stepNumber: "۳",
@@ -23,14 +23,14 @@ const stepsData = [
     description:
       "با انتخاب درست، شاهد رشد ارزش دارایی‌های دیجیتال خود باشید و سرمایه‌گذاری سودآور و آینده‌سازی را تجربه می‌کنید.",
     icon: "/Start/support.webp",
-    mainImage: "/Start/Screenshot2.png",
+    mainImage: "/Start/Start3.png",
   },
 ];
 
 const Start = () => {
   return (
     <section className=" text-white py-20 px-4 sm:px-6 lg:px-8 bg-fixed object bg-cover bg-center bg-no-repeat m-auto">
-      <div className="max-w-[1100px] m-auto ">
+      <div className="max-w-[1380px] m-auto ">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
           <h3 className="text-xl font-bold uppercase tracking-wider mb-2 bg-gradient-to-r from-[#75d9d9] from-[30%] to-[#477cff] bg-clip-text text-transparent">
             شروع به کار
@@ -42,10 +42,10 @@ const Start = () => {
             dir="rtl"
             className="text-gray-400 text-sm sm:text-base leading-relaxed max-sm:text-justify"
           >
-            ما سال‌ها تجربه در ارائه سبدهای سرمایه‌گذاری دیجیتال روبه‌رشد و سودآور
-            داریم
-            <br /> با پشتیبانی و مشاوره لحظه‌ای، اجرای فوری، پلتفرم‌های پیشرفته و
-            بهترین قیمت و نقدشوندگی در بازار کریپتو و دارایی‌های دیجیتال
+            ما سال‌ها تجربه در ارائه سبدهای سرمایه‌گذاری دیجیتال سودآور و روبه‌رشد
+            داریم. با پشتیبانی و مشاوره لحظه‌ای، اجرای سریع معاملات، پلتفرم‌های
+            پیشرفته و دسترسی به بهترین قیمت‌ها و نقدشوندگی در بازار کریپتو، مسیر
+            سرمایه‌گذاری شما را ساده، مطمئن و حرفه‌ای می‌کنیم.
           </p>
         </div>
 

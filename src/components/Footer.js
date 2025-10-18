@@ -21,7 +21,7 @@ const socialIcons = [
 const Footer = () => {
   return (
     <footer className="text-white md:p-12" dir="rtl">
-      <div className="max-w-[1100px] mx-auto p-6 md:p-0">
+      <div className="max-w-[1380px] mx-auto p-6 md:p-0">
         <div className="mt-12 pt-8 border-t border-gray-700 text-center text-sm text-gray-400"></div>
 
         <div

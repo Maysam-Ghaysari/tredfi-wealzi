@@ -21,7 +21,7 @@ const Navbar = () => {
         dir="rtl"
         className="bg-[#0b1120] text-white shadow-md fixed w-full z-50"
       >
-        <div className="max-w-[1024px] mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="max-w-[1380px] mx-auto px-6 py-4 flex justify-between items-center">
           {/* لوگو */}
           <Link href="/" className="flex items-center text-2xl font-bold">
             <img src="/Logo/logo.png" className="w-8 h-8 ml-2" alt="ولزی" />

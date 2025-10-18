@@ -1,7 +1,7 @@
 const DiscountSection = () => {
   return (
     <section className="py-16 sm:py-20 mx-auto px-4 sm:px-6  rounded-xl ">
-      <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-8 sm:gap-12 lg:gap-16 max-w-[1100px] m-auto  rounded-2xl py-13 ">
+      <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-8 sm:gap-12 lg:gap-16 max-w-[1380px] m-auto  rounded-2xl py-13 ">
         <div className="flex-shrink-0 w-full md:w-auto relative mx-auto md:mx-0">
           {/* خط آبی کمی کج و طول بیشتر */}
           <div className="absolute -inset-1 rounded-[22px] border-2 border-gray-600 transform rotate-5 rotate-x-20 pointer-events-none"></div>

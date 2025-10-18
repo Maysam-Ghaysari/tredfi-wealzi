@@ -3,7 +3,7 @@ import Image from "next/image";
 const DownloadSection = () => {
   return (
     <section className="py-10 sm:py-20 mx-auto px-4 sm:px-6 rounded-xl">
-      <div className="max-w-[1100px] m-auto bg-gradient-to-r from-[#75d9d9] from-[10%] to-[#467bff]  py-10 px-4 sm:px-8 md:px-16 rounded-3xl  ">
+      <div className="max-w-[1380px] m-auto bg-gradient-to-r from-[#75d9d9] from-[10%] to-[#467bff]  py-10 px-4 sm:px-8 md:px-16 rounded-3xl  ">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-14">
           <div className="flex-shrink-0 order-1 md:order-1">
             <Image

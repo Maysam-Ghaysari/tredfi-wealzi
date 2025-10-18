@@ -6,26 +6,20 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 const servicesData = {
   "سرمایه گذاری": {
-    image: "/svg/svg1.png",
+    image: "/Services/portfolio.png",
     details: {
       title: "انتخاب هوشمند سبد ",
       p: "سرمایه گذاری ",
       description:
-        "به جای دنبال کردن ترندها و سیگنال‌های پر ریسک، از میان پورتفولیوهای آماده و تحلیل شده، بر اساس موارد زیر انتخاب کنید",
-      listItems: [
-        "سطح ریسک",
-        "مدت زمان سرمایه گذاری",
-        "حوزه مورد علاقه",
-        "بودجه مالی",
-      ],
-      summary:
-        "سبد سرمایه گذاری خود را انتخاب کنید و بدون دغدغه آینده مالی خود را تضمین کنید.",
+        "به جای دنبال کردن تریدرها و سیگنال‌های پرریسک، از میان پورتفولیوهای آماده و تحلیل‌شده‌ای انتخاب کنید که متناسب با سطح ریسک‌پذیری، مدت‌زمان سرمایه‌گذاری، حوزه مورد علاقه و بودجه مالی شما طراحی شده‌اند؛ به‌سادگی سبد  سرمایه گذاری مناسب خود را بسازید.",
+      listItems: [],
+      summary: "",
       features: [
         { title: "آنالیز کامل", text: "بررسی و نمره دهی تخصصی هر پورتفولیو" },
         { title: "شخصی سازی", text: "پیشنهاد پورتفولیوی اختصاصی هر کاربر" },
         {
           title: "+100",
-          text: "  سرمایه‌گذاری آسان برای همه، از مبتدی تا حرفه‌ای ",
+          text: " مدل متفاوت در ایجاد سبدهای سرمایه گذاری",
         },
       ],
     },
@@ -33,79 +27,97 @@ const servicesData = {
   "ارزهای دیجیتال": {
     image: "/svg/svg2.webp",
     details: {
-      title: "ورود به دنیای  ",
+      title: "سرمایه گذاری در  ",
       p: " ارزهای دیجیتال",
-      description:
-        "با سرمایه‌گذاری در ارزهای دیجیتال پیشرو، از پتانسیل رشد بالای این بازار بهره‌مند شوید. ما به شما کمک می‌کنیم بر اساس:",
-      listItems: ["تحلیل تکنیکال", "پروژه‌های معتبر", "آینده‌نگری بازار"],
-      summary:
-        "با آگاهی و ابزار مناسب، ریسک خود را مدیریت کرده و در بازار کریپتو سرمایه‌گذاری کنید.",
+      description: (
+        <>
+          با ولزی در محبوب‌ترین ارزهای دیجیتال مانند بیت‌کوین، اتریوم، ریپل و دیگر
+          رمزارزها سرمایه‌گذاری کنید
+          <br />
+          از نوسانات این بازار پویا بهره ببرید و فرصت‌های رشد را با تصمیم‌های
+          هوشمندانه شناسایی کنید
+        </>
+      ),
+      listItems: [],
+      summary: "",
       features: [
-        { title: "امنیت بالا", text: "نگهداری دارایی‌ها در کیف پول‌های امن" },
-        { title: "تنوع رمزارزها", text: "دسترسی به طیف وسیعی از ارزهای معتبر" },
+        {
+          title: "<20ms ",
+          text: (
+            <>
+              سرعت بالا <br /> در انتخاب بازارها
+            </>
+          ),
+        },
+        { title: "0.1% ", text: "کمترین کارمزد" },
+        {
+          title: "بیشتر از 1000 ",
+          text: (
+            <>
+              تنوع بالا <br /> پایداری در حد نانوثانیه
+            </>
+          ),
+        },
       ],
     },
   },
   "طلا و نقره": {
-    image: "/svg/svg3.png",
+    image: "/Services/gold-silver.png",
     details: {
-      title: "پناهگاهی امن برای  ",
-      p: "سرمایه شما ",
+      title: " سرمایه گذاری در   ",
+      p: "طلا و نقره  ",
 
       description:
-        "طلا و نقره همواره به عنوان دارایی‌های امن شناخته می‌شوند. شما می‌توانید با توجه به این معیارها سرمایه‌گذاری کنید:",
-      listItems: ["حفظ ارزش پول", "پوشش ریسک تورم", "نقدشوندگی بالا"],
-      summary:
-        "ارزش دارایی خود را در برابر نوسانات اقتصادی حفظ کرده و با اطمینان سرمایه‌گذاری کنید.",
+        "با تنوع‌بخشی به پورتفولیوی خود از طریق سرمایه‌گذاری در فلزات ارزشمند مانند طلا و نقره، فرصت‌های تازه‌ای را برای رشد سرمایه کشف کنید. ولزی با بهره‌گیری از شبکه‌ای گسترده و حرفه‌ای از فعالان و تأمین‌کنندگان جهانی این بازار، امکان معامله‌ای روان، مطمئن را برای شما فراهم می‌کند",
+      listItems: [],
+      summary: "",
       features: [
         {
-          title: "بدون نیاز به نگهداری فیزیکی",
-          text: "خرید و فروش آسان از طریق صندوق‌ها",
+          title: " +20",
+          text: (
+            <>
+              مجموعه همکار
+              <br /> نگه دارایی دارایی
+            </>
+          ),
         },
         {
-          title: "معاف از مالیات",
-          text: "سود حاصل از این سرمایه‌گذاری معاف از مالیات است",
+          title: "99%",
+          text: (
+            <>
+              خلوص های متفاوت
+              <br /> در خرید طلا و نقره
+            </>
+          ),
+        },
+        {
+          title: " 0.5% , 1%",
+          text: "کارمزدهایی پایین",
         },
       ],
     },
   },
   "درآمد ثابت": {
-    image: "/svg/svg444.png",
+    image: "/Services/daramad.png",
     details: {
-      title: "کسب سود ",
-      p: "پایدار و بدون ریسک",
-      description:
-        "اگر به دنبال سرمایه‌گذاری بدون هیچ‌گونه ریسک و با سود مشخص هستید، صندوق‌های درآمد ثابت بهترین گزینه برای شما هستند:",
-      listItems: ["سود روزشمار", "پرداخت‌های دوره‌ای منظم", "ضمانت نقدشوندگی"],
-      summary:
-        "با درآمد ثابت، با خیالی آسوده سود کسب کنید و نگران نوسانات بازار نباشید.",
-      features: [
-        { title: "مناسب برای همه", text: "بهترین گزینه برای افراد ریسک‌گریز" },
-        {
-          title: "سود بالاتر از بانک",
-          text: "نرخ سود جذاب‌تر نسبت به سپرده‌های بانکی",
-        },
-      ],
+      title: "  سرمایه گذاری با سود ثابت ",
+      p: "   سالیانه",
+      description: "این قابلیت جدید در حال تکمیل و پیاده سازی است ",
+      listItems: [],
+      summary: "",
+      features: [],
     },
   },
   "املاک و هنر": {
-    image: "/svg/svg55.png",
+    image: "/Services/art.png",
     details: {
-      title: "سرمایه‌گذاری در ",
-      p: "املاک و هنر",
+      title: " سرمایه‌گذاری حتی با پول کم در ",
+      p: "ملک و آثار هنر",
 
-      description:
-        "به زودی امکان سرمایه‌گذاری در حوزه‌های املاک و آثار هنری ارزشمند از طریق پلتفرم ما فراهم خواهد شد.",
-      listItems: [
-        "سرمایه‌گذاری متری",
-        "صندوق‌های املاک و مستغلات",
-        "مالکیت بخشی از آثار هنری",
-      ],
-      summary: "منتظر خبرهای هیجان‌انگیز ما در این بخش باشید.",
-      features: [
-        { title: "به زودی", text: "این بخش در حال آماده‌سازی است" },
-        { title: "فرصت‌های جدید", text: "کشف بازارهای نوین سرمایه‌گذاری" },
-      ],
+      description: "این قابلیت جدید در حال تکمیل و پیاده سازی است",
+      listItems: [],
+      summary: "",
+      features: [],
     },
   },
 };
@@ -118,7 +130,7 @@ const ServicesSection = () => {
 
   return (
     <section className="text-white py-20 px-4 sm:px-6 lg:px-8 bg-[#0b1120] bg-cover bg-center bg-no-repeat ">
-      <div className="max-w-[1110px] mx-auto">
+      <div className="max-w-[1380px] mx-auto">
         {/* عنوان */}
         <div className="text-center">
           <h3 className="bg-gradient-to-r from-[#75d9d9] from-[30%] to-[#477cff] bg-clip-text text-transparent text-xl font-bold ">
@@ -138,7 +150,7 @@ const ServicesSection = () => {
         {/* تب‌ها */}
         <div
           dir="rtl"
-          className="mt-10 flex flex-wrap justify-center gap-2 md:gap-4   "
+          className="mt-15 flex flex-wrap justify-center gap-2 md:gap-12   "
         >
           {tabs.map((tab) => (
             <button
@@ -157,15 +169,15 @@ const ServicesSection = () => {
         </div>
 
         {/* محتوای تصویر و توضیحات */}
-        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+        <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="flex items-center justify-center order-last lg:order-first">
             {activeContent && activeContent.image && (
               <Image
                 key={activeTab}
                 src={activeContent.image}
                 alt={activeContent.details.title}
-                width={600}
-                height={600}
+                width={500}
+                height={500}
                 className=" overflow-hidden object-cover max-w-md lg:max-w-full animate-fade-in"
               />
             )}
@@ -188,7 +200,7 @@ const ServicesSection = () => {
                     </h1>
                   </div>
 
-                  <p className="mt-4 text-gray-300 leading-relaxed text-sm sm:text-base ">
+                  <p className="mt-8 text-gray-300 leading-relaxed text-xl ">
                     {activeContent.details.description}
                   </p>
                   <ul className="mt-6 space-y-2">
@@ -210,14 +222,12 @@ const ServicesSection = () => {
                   {activeContent.details.features.map((feature) => (
                     <div
                       key={feature.title}
-                      className=" border-2 border-gray-800  p-4 rounded-lg bg-gradient-to-r from-[#111b36] from-[14%] to-[#060a12]"
+                      className=" mt-6 border-2 border-gray-800  p-4 rounded-2xl bg-gradient-to-r from-[#111b36] from-[14%] to-[#060a12]"
                     >
-                      <h4 className="font-bold bg-gradient-to-r from-[#75d9d9] from-[30%] to-[#477cff] bg-clip-text text-transparent">
+                      <h4 className=" text-xl font-bold bg-gradient-to-r from-[#75d9d9] from-[30%] to-[#477cff] bg-clip-text text-transparent">
                         {feature.title}
                       </h4>
-                      <p className="mt-1 text-sm text-gray-200">
-                        {feature.text}
-                      </p>
+                      <p className="mt-1  text-gray-200">{feature.text}</p>
                     </div>
                   ))}
                 </div>

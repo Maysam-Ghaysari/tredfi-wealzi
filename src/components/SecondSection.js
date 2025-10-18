@@ -6,7 +6,7 @@ export default function SecondSection() {
   return (
     <section className=" max-sm:py-20 px-4 mx-auto sm:px-6 rounded-xl">
       {/* متن و دکمه */}
-      <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-8 sm:gap-12 lg:gap-16 max-w-[1100px] m-auto   rounded-2xl">
+      <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-8 sm:gap-12 lg:gap-16 max-w-[1380px] m-auto   rounded-2xl">
         <div className="flex-1 text-center md:text-right max-sm:pt-13">
           <h1 className="text-2xl sm:text2xl md:text-3xl font-bold mb-4 sm:mb-6 px-10 text-white">
             خدمات نوآورانه و متفاوت ولزی <br />
