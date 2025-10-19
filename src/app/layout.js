@@ -1,10 +1,12 @@
-import { Noto_Sans_Arabic } from "next/font/google";
+// import { Noto_Sans_Arabic } from "next/font/google";
+import { Vazirmatn } from "next/font/google";
+
 import "./globals.css";
 
-const notoSansArabic = Noto_Sans_Arabic({
+const notoSansArabic = Vazirmatn({
   subsets: ["arabic"],
-  weight: ["400", "700", "200", "100"], // وزن‌هایی که نیاز داری
-  display: "swap", // برای performance بهتر
+  weight: ["400", "700", "200", "100"], 
+  display: "swap", 
 });
 
 export const metadata = {

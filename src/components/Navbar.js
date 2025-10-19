@@ -19,9 +19,9 @@ const Navbar = () => {
     <>
       <nav
         dir="rtl"
-        className="bg-[#0b1120] text-white shadow-md fixed w-full z-50"
+        className="bg-[#0b1120] text-white shadow-md fixed w-full z-50  "
       >
-        <div className="max-w-[1380px] mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="max-w-[1380px] mx-auto px-6 py-8 flex justify-between items-center">
           {/* لوگو */}
           <Link href="/" className="flex items-center text-2xl font-bold">
             <img src="/Logo/logo.png" className="w-8 h-8 ml-2" alt="ولزی" />
@@ -29,12 +29,12 @@ const Navbar = () => {
           </Link>
 
           {/* منوی دسکتاپ */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-start ml-100 space-x-6 gap-5">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-white transition-all duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#75d9d9] hover:to-[#477cff]"
+                className="text-white text-xl transition-all duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#75d9d9] hover:to-[#477cff]"
               >
                 {link.title}
               </Link>

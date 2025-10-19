@@ -91,7 +91,7 @@ const servicesData = {
           ),
         },
         {
-          title: " 0.5% , 1%",
+          title: " 0.5% - 1%",
           text: "کارمزدهایی پایین",
         },
       ],
@@ -100,8 +100,8 @@ const servicesData = {
   "درآمد ثابت": {
     image: "/Services/daramad.png",
     details: {
-      title: "  سرمایه گذاری با سود ثابت ",
-      p: "   سالیانه",
+      title: "  سرمایه گذاری با  ",
+      p: "  سود ثابت سالیانه",
       description: "این قابلیت جدید در حال تکمیل و پیاده سازی است ",
       listItems: [],
       summary: "",
@@ -111,7 +111,7 @@ const servicesData = {
   "املاک و هنر": {
     image: "/Services/art.png",
     details: {
-      title: " سرمایه‌گذاری حتی با پول کم در ",
+      title: " سرمایه‌گذاری در",
       p: "ملک و آثار هنری",
 
       description: "این قابلیت جدید در حال تکمیل و پیاده سازی است",
@@ -173,10 +173,8 @@ const ServicesSection = () => {
           <div className="flex items-center justify-center order-last lg:order-first relative">
             {activeContent && activeContent.image && (
               <>
-                {/* هاله نوری زیر عکس */}
-                <div className="absolute bottom-0 h-[350px] w-[350px] rounded-full bg-[#465a8e] blur-[100px] opacity-75 max-sm:-bottom-20 animate-fade-in "></div>
+                <div className="absolute bottom-0 h-[350px] w-[350px] rounded-full bg-[#465a8e] blur-[120px] opacity-95 max-sm:-bottom-20 animate-fade-in "></div>
 
-                {/* خود تصویر بدون افکت تار */}
                 <Image
                   key={activeTab}
                   src={activeContent.image}
@@ -224,16 +222,18 @@ const ServicesSection = () => {
                     {activeContent.details.summary}
                   </p>
                 </div>
-                <div className="mt-6 flex flex-row-reverse gap-4   ">
+                <div className="mt-6 flex flex-row-reverse gap-4 ">
                   {activeContent.details.features.map((feature) => (
                     <div
                       key={feature.title}
-                      className="mt-6 border-2 border-gray-800  p-2   rounded-2xl bg-gradient-to-r from-[#111b36] from-[14%] to-[#060a12]"
+                      className="mt-10 border-2 w-100 border-gray-800  p-2   rounded-2xl bg-gradient-to-r from-[#111b36] from-[14%] to-[#060a12]"
                     >
                       <h4 className="max-sm:text-[13px] text-xl font-bold bg-gradient-to-r from-[#75d9d9] from-[30%] to-[#477cff] bg-clip-text text-transparent">
                         {feature.title}
                       </h4>
-                      <p className="max-sm:text-[10px] mt-1  text-gray-200">{feature.text}</p>
+                      <p className="max-sm:text-[10px] mt-1  text-gray-200">
+                        {feature.text}
+                      </p>
                     </div>
                   ))}
                 </div>

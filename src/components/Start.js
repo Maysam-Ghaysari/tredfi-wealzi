@@ -32,15 +32,15 @@ const Start = () => {
     <section className=" text-white py-20 px-4 sm:px-6 lg:px-8 bg-fixed object bg-cover bg-center bg-no-repeat m-auto">
       <div className="max-w-[1380px] m-auto ">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-          <h3 className="text-xl font-bold uppercase tracking-wider mb-2 bg-gradient-to-r from-[#75d9d9] from-[30%] to-[#477cff] bg-clip-text text-transparent">
-            شروع به کار
-          </h3>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+          <div className="text-xl font-bold uppercase tracking-wider mb-8 bg-clip-text ">
+            <p className="bg-gradient-to-r from-[#75d9d9] from-[2%] to-[#477cff] bg-clip-text text-transparent"> شروع به کار</p>
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 leading-tight">
             در ۳ قدم سرمایه‌گذاری را شروع کنید
           </h2>
           <p
             dir="rtl"
-            className="text-gray-400 text-sm sm:text-base leading-relaxed max-sm:text-justify"
+            className="text-gray-400 text-sm sm:text-base leading-relaxed max-sm:text-justify "
           >
             ما سال‌ها تجربه در ارائه سبدهای سرمایه‌گذاری دیجیتال سودآور و روبه‌رشد
             داریم. با پشتیبانی و مشاوره لحظه‌ای، اجرای سریع معاملات، پلتفرم‌های
@@ -52,19 +52,19 @@ const Start = () => {
         {/* گرید کارت‌ها */}
         <div
           dir="rtl"
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 text-right"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-8 text-right"
         >
           {stepsData.map((step, index) => {
             const borderColors = [
-              "border-b-[8px] border-b-[#4376f6] rounded-b-2xl  ",
-              "border-b-[8px] border-b-[#21cb80] rounded-b-2xl ",
-              "border-b-[8px] border-b-[#f59b47] rounded-b-2xl ",
+              "border-b-[12px] border-b-[#4376f6] rounded-b-2xl  ",
+              "border-b-[12px] border-b-[#21cb80] rounded-b-2xl ",
+              "border-b-[12px] border-b-[#f59b47] rounded-b-2xl ",
             ];
 
             return (
               <div
                 key={step.stepNumber}
-                className={` bg-[#101730] relative rounded-2xl p-4 sm:p-6 flex flex-col shadow-[0px_0px_10px_10px_rgba(0,0,26,0.9)]`}
+                className={` bg-[#101730] relative rounded-2xl p-4 sm:p-6 flex flex-col shadow-[0px_0px_10px_10px_rgba(0,0,38,0.6)]`}
               >
                 {/* نوار رنگی پایین کارت */}
                 <div
@@ -73,7 +73,7 @@ const Start = () => {
 
                 {/* عنوان و آیکون */}
                 <div className="flex items-center justify-between mb-3 sm:mb-4 flex-row-reverse">
-                  <h4 className="text-lg sm:text-xl font-bold">
+                  <h4 className=" sm:text-xl font-bold ml-26 w-60 ">
                     {step.stepNumber}- {step.title}
                   </h4>
                   <div className="sm:p-2 rounded-lg">
@@ -91,7 +91,7 @@ const Start = () => {
                 </p>
 
                 {/* تصویر اصلی */}
-                <div className=" transition-transform duration-500 hover:-translate-y-3 hover:shadow-lg ">
+                <div className=" transition-transform duration-500 hover:-translate-y-3 hover:shadow-lg max-w-75 m-auto  ">
                   <Image
                     src={step.mainImage}
                     alt={`تصویر برای ${step.title}`}

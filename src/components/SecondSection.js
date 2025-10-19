@@ -37,8 +37,8 @@ export default function SecondSection() {
           <Image
             src="/second-section/why.png"
             alt="خدمات ولزی"
-            width={350}
-            height={3500}
+            width={450}
+            height={450}
             className=" rounded-lg"
             priority
           />
