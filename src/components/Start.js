@@ -29,7 +29,7 @@ const stepsData = [
 
 const Start = () => {
   return (
-    <section className=" text-white py-20 px-4 sm:px-6 lg:px-8 bg-fixed object bg-cover bg-center bg-no-repeat m-auto">
+    <section className=" text-white px-4 sm:px-6 lg:px-8 bg-fixed object bg-cover bg-center bg-no-repeat m-auto">
       <div className="max-w-[1380px] m-auto ">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
           <div className="text-xl font-bold uppercase tracking-wider mb-8 bg-clip-text ">

@@ -5,8 +5,8 @@ import "./globals.css";
 
 const notoSansArabic = Vazirmatn({
   subsets: ["arabic"],
-  weight: ["400", "700", "200", "100"], 
-  display: "swap", 
+  weight: ["400", "700", "200", "100"],
+  display: "swap",
 });
 
 export const metadata = {

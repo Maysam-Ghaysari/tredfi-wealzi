@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function SecondSection() {
   return (
-    <section className=" max-sm:py-20 px-4 mx-auto sm:px-6 rounded-xl">
+    <section className="  px-4 mx-auto sm:px-6 rounded-xl">
       {/* متن و دکمه */}
       <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-8 sm:gap-12 lg:gap-16 max-w-[1380px] m-auto   rounded-2xl">
         <div className="flex-1 text-center md:text-right max-sm:pt-13">

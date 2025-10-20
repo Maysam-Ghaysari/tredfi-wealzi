@@ -150,14 +150,14 @@ const ServicesSection = () => {
         {/* تب‌ها */}
         <div
           dir="rtl"
-          className="mt-15 flex flex-wrap justify-center gap-2 md:gap-12   "
+          className="mt-15 max-sm:mt-5 flex flex-nowrap md:flex-wrap justify-start md:justify-center gap-2 md:gap-12 overflow-x-auto  px-2 hide-scrollbar"
         >
           {tabs.map((tab) => (
             <button
               type="button"
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 py-2 rounded-md text-sm md:text-base font-semibold transition-colors duration-300 ${
+              className={`flex-shrink-0 px-4 py-2 max-sm:py-4 rounded-md text-sm md:text-base font-semibold transition-colors duration-300 ${
                 activeTab === tab
                   ? "bg-gray-200 text-gray-900"
                   : "bg-[#1e293b] text-gray-300 hover:bg-gray-700"
@@ -169,7 +169,7 @@ const ServicesSection = () => {
         </div>
 
         {/* محتوای تصویر و توضیحات */}
-        <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+        <div className="mt-20 max-sm:mt-5 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="flex items-center justify-center order-last lg:order-first relative">
             {activeContent && activeContent.image && (
               <>
@@ -196,15 +196,15 @@ const ServicesSection = () => {
               <>
                 <div className=" rounded-lg ">
                   <div className="flex flex-row-reverse">
-                    <h3 className="text-3xl max-sm:text-[17px] font-bold">
+                    <h3 className="text-3xl max-sm:text-2xl max-sm:mt-8 font-bold">
                       {activeContent.details.title}
                     </h3>
-                    <h1 className=" text-3xl max-sm:text-[17px] mr-2 font-bold  bg-gradient-to-r from-[#75d9d9] from-[10%] to-[#477cff] bg-clip-text text-transparent">
+                    <h1 className=" text-3xl max-sm:text-2xl mr-2 max-sm:mt-8  font-bold  bg-gradient-to-r from-[#75d9d9] from-[10%] to-[#477cff] bg-clip-text text-transparent">
                       {activeContent.details.p}
                     </h1>
                   </div>
 
-                  <p className="mt-8 text-gray-300 leading-relaxed text-xl ">
+                  <p className="mt-8 max-sm:mt-3 max-sm:text-xl text-gray-300 leading-relaxed text-xl ">
                     {activeContent.details.description}
                   </p>
                   <ul className="mt-6 space-y-2">
@@ -226,7 +226,7 @@ const ServicesSection = () => {
                   {activeContent.details.features.map((feature) => (
                     <div
                       key={feature.title}
-                      className="mt-10 border-2 w-100 border-gray-800  p-2   rounded-2xl bg-gradient-to-r from-[#111b36] from-[14%] to-[#060a12]"
+                      className="mt-10 max-sm:mt-4 border-2 w-100 border-gray-800  p-2   rounded-2xl bg-gradient-to-r from-[#111b36] from-[14%] to-[#060a12]"
                     >
                       <h4 className="max-sm:text-[13px] text-xl font-bold bg-gradient-to-r from-[#75d9d9] from-[30%] to-[#477cff] bg-clip-text text-transparent">
                         {feature.title}
