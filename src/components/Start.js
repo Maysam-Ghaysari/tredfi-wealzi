@@ -6,7 +6,7 @@ const stepsData = [
     title: "ایجاد حساب کاربری",
     description:
       "در ۳ دقیقه حساب خود را بسازید. هویتتان را با امنیت کامل تأیید کنید. از هر نقطه دنیا به ما بپیوندید.",
-    icon: "/Start/why-multibank.webp",
+    icon: "/Start/login.png",
     mainImage: "/Start/Start1.png",
   },
   {
@@ -14,7 +14,7 @@ const stepsData = [
     title: "انتخاب سبد دارایی",
     description:
       "از میان پورتفولیوهایی که متناسب با ریسک و شخصیت مالی شما پیشنهاد داده شده، پورتفولیو مورد نظر خود را انتخاب کنید.",
-    icon: "/Start/account-funding.webp",
+    icon: "/Start/portfolio.png",
     mainImage: "/Start/Start2.png",
   },
   {
@@ -22,25 +22,28 @@ const stepsData = [
     title: "کسب بازدهی ماهانه",
     description:
       "با انتخاب درست، شاهد رشد ارزش دارایی‌های دیجیتال خود باشید و سرمایه‌گذاری سودآور و آینده‌سازی را تجربه می‌کنید.",
-    icon: "/Start/support.webp",
+    icon: "/Start/grows-port.png",
     mainImage: "/Start/Start3.png",
   },
 ];
 
 const Start = () => {
   return (
-    <section className=" text-white px-4 sm:px-6 lg:px-8 bg-fixed object bg-cover bg-center bg-no-repeat m-auto">
+    <section className=" text-white px-4 max-sm:px-6 lg:px-8 bg-fixed object bg-cover bg-center bg-no-repeat m-auto">
       <div className="max-w-[1380px] m-auto ">
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-          <div className="text-xl font-bold uppercase tracking-wider mb-8 bg-clip-text ">
-            <p className="bg-gradient-to-r from-[#75d9d9] from-[2%] to-[#477cff] bg-clip-text text-transparent"> شروع به کار</p>
+          <div className="text-xl font-bold uppercase tracking-wider mb-8 bg-clip-text  ">
+            <p className="bg-gradient-to-r from-[#75d9d9] from-[2%] to-[#477cff] bg-clip-text text-transparent ">
+              {" "}
+              شروع به کار
+            </p>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 leading-tight">
             در ۳ قدم سرمایه‌گذاری را شروع کنید
           </h2>
           <p
             dir="rtl"
-            className="text-gray-400 text-sm sm:text-base leading-relaxed max-sm:text-justify "
+            className="text-gray-400 text-sm sm:text-base leading-relaxed max-sm:text-center "
           >
             ما سال‌ها تجربه در ارائه سبدهای سرمایه‌گذاری دیجیتال سودآور و روبه‌رشد
             داریم. با پشتیبانی و مشاوره لحظه‌ای، اجرای سریع معاملات، پلتفرم‌های
@@ -64,7 +67,7 @@ const Start = () => {
             return (
               <div
                 key={step.stepNumber}
-                className={` bg-[#101730] relative rounded-2xl p-4 sm:p-6 flex flex-col shadow-[0px_0px_10px_10px_rgba(0,0,38,0.6)]`}
+                className={`bg-[#101730] relative rounded-2xl p-4 sm:p-6 flex flex-col max-sm:mb-5 border border-[#467bff]/50`}
               >
                 {/* نوار رنگی پایین کارت */}
                 <div
@@ -72,16 +75,16 @@ const Start = () => {
                 ></div>
 
                 {/* عنوان و آیکون */}
-                <div className="flex items-center justify-between mb-3 sm:mb-4 flex-row-reverse">
-                  <h4 className=" sm:text-xl font-bold ml-26 w-60 ">
+                <div className="flex max-md:items-center lg:items-center md:items-center justify-between max-sm:m-auto mb-3 flex-row-reverse">
+                  <h4 className=" xl:text-xl font-bold lg:ml-26  lg:w-80 max-md:mr-2">
                     {step.stepNumber}- {step.title}
                   </h4>
-                  <div className="sm:p-2 rounded-lg">
+                  <div className="sm:p-2 max-sm:w-12 max-sm:mb-3 rounded-lg">
                     <Image
                       src={step.icon}
                       alt={`آیکون برای ${step.title}`}
-                      width={72}
-                      height={72}
+                      width={70}
+                      height={70}
                     />
                   </div>
                 </div>
@@ -91,7 +94,7 @@ const Start = () => {
                 </p>
 
                 {/* تصویر اصلی */}
-                <div className=" transition-transform duration-500 hover:-translate-y-3 hover:shadow-lg max-w-75 m-auto  ">
+                <div className=" transition-transform duration-500 hover:-translate-y-4 max-w-75 m-auto  ">
                   <Image
                     src={step.mainImage}
                     alt={`تصویر برای ${step.title}`}

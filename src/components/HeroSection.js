@@ -40,14 +40,14 @@ const HeroSection = () => {
         <div className="mt-8 flex w-full flex-col gap-4 sm:mt-10 sm:w-auto sm:flex-row sm:gap-6">
           <button
             type="button"
-            className="w-full sm:w-auto transform rounded-md text-[#10141f] bg-gradient-to-r from-[#75d9d9] from-[-60%] to-[#477cff] px-14 py-2 text-lg font-bold hover:g-gradient-to-r hover:from-[#fff] hover:to-[#fff] hover:text-blue-600 duration-500 transition-all"
+            className="w-full sm:w-auto transform rounded-md text-[#10141f] bg-gradient-to-r from-[#75d9d9] from-[-60%] to-[#477cff] px-14 py-3 text-lg font-bold hover:g-gradient-to-r hover:from-[#fff] hover:to-[#fff] hover:text-blue-600 duration-500 transition-all max-sm:text-white"
           >
             شروع به کار
           </button>
 
           <button
             type="button"
-            className=" transform rounded-md bg-[#141b34] px-14 py-2 text-lg font-semibold text-blue-300 transition-all duration-300 sm:w-auto hover:bg-white hover:text-blue-600 max-sm:w-full "
+            className=" transform rounded-md bg-[#141b34] px-14 py-3 text-lg font-semibold text-blue-300 transition-all duration-300 sm:w-auto hover:bg-white hover:text-blue-600 max-sm:w-full "
           >
             ورود
           </button>

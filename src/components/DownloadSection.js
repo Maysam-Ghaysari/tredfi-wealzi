@@ -1,41 +1,38 @@
+"use client";
 import Image from "next/image";
 
-const DownloadSection = () => {
+export default function DownloadSection() {
   return (
-    <section className="py-10 sm:py-20 mx-auto px-4 sm:px-6 rounded-xl">
-      <div className="max-w-[1380px] m-auto bg-gradient-to-r from-[#75d9d9] from-[10%] to-[#467bff]  py-10 px-4 sm:px-8 md:px-16 rounded-3xl  ">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-14">
-          <div className="flex-shrink-0 order-1 md:order-1">
-            <Image
-              src="/download-section/rocket.webp"
-              alt="Rocket Icon"
-              width={300}
-              height={300}
-              className="w-28 h-28 sm:w-36 sm:h-36 md:w-54 md:h-40 object-contain mx-auto md:mx-0"
-            />
-          </div>
+    <section className=" relative mt-20">
+      {/* تصویر جدا از بک‌گراند */}
+      <div className="z-20 absolute 2xl:left-70 xl:left-30 lg:left-30 max-md:left-30 max-sm:top-100 max-sm:left-5 lg:top-1/3 md:left-30 sm:top-1/3 sm:-ml-20 -translate-y-1/2 w-[250px] sm:w-[300px] md:w-[400px] lg:w-[450px] max-sm:w-[350px]">
+        <Image
+          src="/download-section/wealzi-deskmob.png"
+          alt="App Preview"
+          width={500}
+          height={500}
+          className="object-contain"
+        />
+      </div>
 
-          <div className="flex-1 text-center md:text-right order-2 md:order-2">
-            <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-5 leading-snug">
+      {/* بک‌گراند آبی و متن */}
+      <div className=" m-auto relative bg-gradient-to-r from-cyan-400 to-blue-500 text-white py-16 md:py-10 px-6 md:px-12 lg:py-10 xl:py-10 lg:px-24 max-sm:h-125 max-md:py-5">
+        <div className="max-w-[1380px] m-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
+          {/* متن سمت راست */}
+          <div className="w-full md:w-1/2 text-center md:text-right space-y-6 ml-auto  max-md:text-end">
+            <h2 className="text-2xl md:text-3xl font-bold">
               دانلود و شروع به کار
             </h2>
-            <p className="text-white/90 text-sm sm:text-base md:text-lg mb-6 leading-relaxed">
-              اپلیکیشن ولزی را دانلود کنید و از هرجا به حساب خود دسترسی داشته
-              باشید. شروعی آسان، سریع و امن برای همه کاربران
+            <p className="text-white/90 text-sm md:text-base leading-relaxed  ">
+              اپلیکیشن ویلزی را دانلود کنید و از هرجا به حساب خود دسترسی داشته
+              باشید. شروعی آسان، سریع و امن برای همه کاربران.
             </p>
-
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-end">
-              <button
-                type="button"
-                className="bg-white text-blue-600 font-semibold py-2.5 px-6 rounded-lg shadow hover:bg-gray-100 transition text-sm sm:text-base whitespace-nowrap"
-              >
-                نسخه وب‌اپلیکیشن برای کاربران iOS
+            <div className="flex flex-col sm:flex-row justify-center md:justify-end items-center gap-4 sm:gap-6 max-md:justify-end">
+              <button className="bg-white text-gray-800 px-7 h-13 rounded-lg font-semibold hover:bg-gray-200 transition w-full sm:w-auto sm:py-0">
+                نسخه وب‌اپلیکیشن برای iOS
               </button>
-              <button
-                type="button"
-                className="bg-green-500 text-white font-semibold py-2.5 px-6 rounded-lg shadow hover:bg-green-600 transition text-sm sm:text-base whitespace-nowrap"
-              >
-                دریافت از بازار
+              <button className="bg-green-500 text-white px-7 h-13 rounded-lg font-semibold hover:bg-green-600 transition w-full sm:w-auto  sm:py-1">
+                بازار
               </button>
             </div>
           </div>
@@ -43,6 +40,4 @@ const DownloadSection = () => {
       </div>
     </section>
   );
-};
-
-export default DownloadSection;
+}

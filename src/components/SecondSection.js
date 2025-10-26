@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function SecondSection() {
   return (
-    <section className="  px-4 mx-auto sm:px-6 rounded-xl">
+    <section className=" max-sm:-mt-25 px-4 mx-auto sm:px-6 rounded-xl">
       {/* متن و دکمه */}
       <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-8 sm:gap-12 lg:gap-16 max-w-[1380px] m-auto   rounded-2xl">
         <div className="flex-1 text-center md:text-right max-sm:pt-13">
@@ -25,7 +25,7 @@ export default function SecondSection() {
           <div className="">
             <button
               type="button"
-              className=" bg-gradient-to-r from-[#75d9d9] from-[5%] to-[#477cff] px-10 py-2 max-sm:mt-3 rounded-md font-semibold text-sm sm:text-base hover:g-gradient-to-r hover:from-[#fff] hover:to-[#fff] hover:text-blue-600 transition-all  duration-500"
+              className=" hover:g-gradient-to-r hover:from-[#fff] hover:to-[#fff] hover:text-blue-600 mt-6 sm:mt-8 px-8 sm:px-10 py-3 font-semibold text-[#10141f]  bg-gradient-to-r from-[#75d9d9] from-[5%] to-[#477cff] rounded-lg shadow-md transition-all duration-500 transform"
             >
               !همراه شو
             </button>

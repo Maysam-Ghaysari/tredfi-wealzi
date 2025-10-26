@@ -5,6 +5,7 @@ import Image from "next/image";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 const servicesData = {
+  /* ... همان داده‌هایی که قبلاً نوشتی ... */
   "سرمایه گذاری": {
     image: "/Services/portfolio.png",
     details: {
@@ -66,7 +67,6 @@ const servicesData = {
     details: {
       title: " سرمایه گذاری در   ",
       p: "طلا و نقره  ",
-
       description:
         "با تنوع‌بخشی به پورتفولیوی خود از طریق سرمایه‌گذاری در فلزات ارزشمند مانند طلا و نقره، فرصت‌های تازه‌ای را برای رشد سرمایه کشف کنید. ولزی با بهره‌گیری از شبکه‌ای گسترده و حرفه‌ای از فعالان و تأمین‌کنندگان جهانی این بازار، امکان معامله‌ای روان، مطمئن را برای شما فراهم می‌کند",
       listItems: [],
@@ -113,7 +113,6 @@ const servicesData = {
     details: {
       title: " سرمایه‌گذاری در",
       p: "ملک و آثار هنری",
-
       description: "این قابلیت جدید در حال تکمیل و پیاده سازی است",
       listItems: [],
       summary: "",
@@ -136,10 +135,10 @@ const ServicesSection = () => {
           <h3 className="bg-gradient-to-r from-[#75d9d9] from-[30%] to-[#477cff] bg-clip-text text-transparent text-xl font-bold ">
             خدمات ما
           </h3>
-          <h2 className="mt-2 text-3xl font-bold md:text-4xl">
-            سرمایه‌گذاری آسان برای همه، از مبتدی تا حرفه‌ای
+          <h2 className="mt-2 text-3xl max-sm:text-[33px] font-bold md:text-4xl">
+            سرمایه‌گذاری آسان برای همه از مبتدی تا حرفه‌ای
           </h2>
-          <p className="mt-4 max-w-3xl mx-auto text-gray-400 text-sm sm:text-base">
+          <p className="mt-4 max-w-3xl mx-auto text-gray-400 text-sm sm:text-base  max-sm:flex-col">
             با استفاده از ولزی در کنار سادگی با اطمینان اقدام به سرمایه گذاری
             کنید. پشت دست بزرگان بازار حتی با مبالغ کم سرمایه گذاری کنید و با
             نقدشوندگی بالا و متناسب با ریسک پروفایل خودتان سبد سرمایه گذاری
@@ -169,11 +168,12 @@ const ServicesSection = () => {
         </div>
 
         {/* محتوای تصویر و توضیحات */}
-        <div className="mt-20 max-sm:mt-5 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-          <div className="flex items-center justify-center order-last lg:order-first relative">
+        <div className="mt-20 max-sm:mt-5 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center ">
+          {/* ستون تصویر */}
+          <div className="flex items-center justify-center order-last lg:order-first relative ">
             {activeContent && activeContent.image && (
               <>
-                <div className="absolute bottom-0 h-[350px] w-[350px] rounded-full bg-[#465a8e] blur-[120px] opacity-95 max-sm:-bottom-20 animate-fade-in "></div>
+                <div className="absolute max-sm:bottom-3 bottom-0 h-[350px] w-[350px] rounded-full bg-[#465a8e] blur-[120px] opacity-95 animate-fade-in "></div>
 
                 <Image
                   key={activeTab}
@@ -204,7 +204,7 @@ const ServicesSection = () => {
                     </h1>
                   </div>
 
-                  <p className="mt-8 max-sm:mt-3 max-sm:text-xl text-gray-300 leading-relaxed text-xl ">
+                  <p className="mt-8 max-sm:mt-3 max-sm:text-lg text-gray-300 leading-relaxed text-xl ">
                     {activeContent.details.description}
                   </p>
                   <ul className="mt-6 space-y-2">
@@ -222,16 +222,18 @@ const ServicesSection = () => {
                     {activeContent.details.summary}
                   </p>
                 </div>
-                <div className="mt-6 flex flex-row-reverse gap-4 ">
+
+                {/* باکس های کوچک ۳ عددی - نسخه دسکتاپ/تبلت (نمایش در md و بالاتر) */}
+                <div className="mt-6 hidden md:flex flex-row-reverse gap-2   ">
                   {activeContent.details.features.map((feature) => (
                     <div
                       key={feature.title}
-                      className="mt-10 max-sm:mt-1 border-2 w-100 border-gray-800  p-2   rounded-2xl bg-gradient-to-r from-[#111b36] from-[14%] to-[#060a12]"
+                      className="mt-10 max-sm:mt-1 border-2 w-100 border-gray-800 p-2 rounded-2xl bg-gradient-to-r from-[#111b36] from-[14%] to-[#060a12]"
                     >
-                      <h4 className="max-sm:text-[13px] text-xl font-bold bg-gradient-to-r from-[#75d9d9] from-[30%] to-[#477cff] bg-clip-text text-transparent">
+                      <h4 className="max-sm:text-[14px] text-xl font-bold bg-gradient-to-r from-[#75d9d9] from-[30%] to-[#477cff] bg-clip-text text-transparent">
                         {feature.title}
                       </h4>
-                      <p className="max-sm:text-[10px] mt-1  text-gray-200">
+                      <p className="max-sm:text-[11px] mt-1  text-gray-200">
                         {feature.text}
                       </p>
                     </div>
@@ -239,6 +241,29 @@ const ServicesSection = () => {
                 </div>
               </>
             )}
+          </div>
+
+          {/* *** نسخه موبایل: باکس‌ها را این‌جا بعد از گرید نمایش می‌دهیم (نمایش فقط در موبایل) */}
+        </div>
+
+        {/* این بلوک خارج از گرید قرار گرفته تا در موبایل پایین‌تر از تصویر و توضیحات بیاید */}
+        <div className="mt-6 md:hidden  ">
+          <div className="flex flex-row-reverse text-right gap-2 justify-around">
+            {activeContent &&
+              activeContent.details &&
+              activeContent.details.features.map((feature) => (
+                <div
+                  key={feature.title + "-mobile"}
+                  className="mt-10 max-sm:mt-1 border-2 w-100 border-gray-800 p-2 rounded-2xl bg-gradient-to-r from-[#111b36] from-[14%] to-[#060a12]"
+                >
+                  <h4 className="text-[15px] font-bold bg-gradient-to-r from-[#75d9d9] from-[30%] to-[#477cff] bg-clip-text text-transparent">
+                    {feature.title}
+                  </h4>
+                  <p className="text-[11px] mt-1 text-gray-200">
+                    {feature.text}
+                  </p>
+                </div>
+              ))}
           </div>
         </div>
       </div>

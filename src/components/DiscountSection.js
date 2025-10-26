@@ -1,6 +1,6 @@
 const DiscountSection = () => {
   return (
-    <section className="py-16 sm:py-20 mx-auto px-4 sm:px-6  rounded-xl ">
+    <section className="max-sm:-mt-10 py-16 sm:py-20 mx-auto px-4 sm:px-6  rounded-xl ">
       <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-8 sm:gap-12 lg:gap-16 max-w-[1380px] m-auto  rounded-2xl py-13 ">
         <div className="flex-shrink-0 w-full md:w-auto relative mx-auto md:mx-0">
           {/* خط آبی کمی کج و طول بیشتر */}
