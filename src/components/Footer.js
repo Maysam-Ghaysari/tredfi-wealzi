@@ -129,7 +129,7 @@ const Footer = () => {
         </div>
 
         {/* Social icons */}
-        <div className="flex justify-center sm:justify-end mt-10 space-x-4">
+        <div className="flex justify-center sm:justify-end max-sm:mt-10 space-x-4">
           {socialIcons.map((item, index) => (
             <a
               key={index}

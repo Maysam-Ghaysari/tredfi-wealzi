@@ -170,7 +170,7 @@ const ServicesSection = () => {
         {/* محتوای تصویر و توضیحات */}
         <div className="mt-20 max-sm:mt-5 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center ">
           {/* ستون تصویر */}
-          <div className="flex items-center justify-center order-last lg:order-first relative ">
+          <div className="flex items-center justify-center order-last lg:order-first relative max-sm:h-[350px] ">
             {activeContent && activeContent.image && (
               <>
                 <div className="absolute max-sm:bottom-3 bottom-0 h-[350px] w-[350px] rounded-full bg-[#465a8e] blur-[120px] opacity-95 animate-fade-in "></div>
@@ -181,7 +181,7 @@ const ServicesSection = () => {
                   alt={activeContent.details.title}
                   width={500}
                   height={500}
-                  className="relative  z-10 overflow-hidden object-cover max-w-md lg:max-w-full animate-fade-in"
+                  className="relative  z-10 overflow-hidden object-cover max-w-md lg:max-w-full animate-fade-in max-sm:w-[300px]"
                 />
               </>
             )}
