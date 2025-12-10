@@ -67,7 +67,7 @@ const Start = () => {
             return (
               <div
                 key={step.stepNumber}
-                className={`bg-[#101730] relative rounded-2xl p-4 sm:p-6 flex flex-col max-sm:mb-5 border border-[#467bff]/50`}
+                className={`bg-[#101730] relative rounded-2xl p-4 sm:p-6 flex flex-col max-sm:mb-5 border border-[#000]`}
               >
                 {/* نوار رنگی پایین کارت */}
                 <div

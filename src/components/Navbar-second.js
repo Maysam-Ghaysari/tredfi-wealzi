@@ -7,19 +7,11 @@ import { FiMenu, FiX } from "react-icons/fi";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navLinks = [
-    { title: "امکانات", href: "/features" },
-    { title: "بازارها", href: "/markets" },
-    { title: "وبلاگ آموزشی", href: "/blog" },
-    { title: "راهنما", href: "/help" },
-    { title: "ارتباط با ما", href: "/contact" },
-  ];
-
   return (
     <>
       <nav
         dir="rtl"
-        className="bg-[#0b1120] text-white shadow-md fixed w-full z-50  "
+        className="bg-[#0b1120] text-white shadow-md fixed w-full z-50 "
       >
         <div className="max-w-[1380px] mx-auto px-6 py-3 xl:py-7 flex justify-between items-center">
           {/* لوگو */}
@@ -27,19 +19,6 @@ const Navbar = () => {
             <img src="/Logo/logo.png" className="w-8 h-8 ml-2" alt="ولزی" />
             <span className="text-white">ولزی</span>
           </Link>
-
-          {/* منوی دسکتاپ */}
-          <div className="hidden md:flex items-start xl:ml-100 space-x-6 gap-5 ">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-white lg:text-xl md:text-sm transition-all duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#75d9d9] hover:to-[#477cff]"
-              >
-                {link.title}
-              </Link>
-            ))}
-          </div>
 
           {/* دکمه‌های ورود و ثبت نام دسکتاپ */}
           <div className="hidden md:flex items-center space-x-4">
@@ -93,6 +72,7 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             ></Link>
             <button
+              type="button"
               className=" bg-amber-50 rounded-2xl"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -100,27 +80,12 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* لینک‌های ناوبری */}
-          <ul className="flex flex-col items-start space-y-6 text-white">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className="hover:text-cyan-400 text-lg transition-colors duration-300"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-
           {/* دکمه‌های ورود و ثبت نام */}
           <div className="flex flex-col items-center space-y-3 pt-6 mt-6 border-t border-gray-600">
             <Link href="/signin">
               <button
                 type="button"
-                className="w-full px-4 py-2 rounded-lg border border-gray-600 hover:bg-gray-700 transition-colors duration-300 text-white"
+                className="w-full px-26 py-2 rounded-lg border border-gray-600 hover:bg-gray-700 transition-colors duration-300 text-white"
               >
                 ورود
               </button>
@@ -128,9 +93,9 @@ const Navbar = () => {
             <Link href="/signup">
               <button
                 type="button"
-                className="w-full px-4 py-2 rounded-lg bg-gradient-to-r from-[#477cff] to-[#75d9d9] hover:opacity-90 transition-opacity duration-300"
+                className="w-full px-26 py-2  rounded-lg bg-gradient-to-r from-[#477cff] to-[#75d9d9] hover:opacity-90 transition-opacity duration-300"
               >
-                ثبت نام
+                ثبت‌نام
               </button>
             </Link>
           </div>

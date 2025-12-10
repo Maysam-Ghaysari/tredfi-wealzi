@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <ClientWrapper>
       <div>
-        <Navbar />
-        <HeroSection />
-        <ServicesSection />
+        <Navbaru />
+        <HeroSectionugf />
+        <ServicesSectionio />
         <Start />
         <div className=" bg-fixed object bg-center bg-cover ">
           <DiscountSection />
