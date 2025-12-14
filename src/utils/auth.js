@@ -15,6 +15,12 @@ const generateAccessToken = (data) => {
   });
   return token;
 };
+const generateRefreshToken = (data) => {
+  const token = sign({ ...data }, process.env.RefreshTokenSecretKey, {
+    expiresIn: "15d",
+  });
+  return token;
+};
 const verifyAccessToken = (token) => {
   try {
     const tokenPayload = verify(token, process.env.AccessTokenSecretKey);
@@ -45,6 +51,7 @@ const validatePhone = (phone) => {
 };
 export {
   generateAccessToken,
+  generateRefreshToken,
   verifyAccessToken,
   verifyPassword,
   hashPassword,
